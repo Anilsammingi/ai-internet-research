@@ -1,0 +1,8 @@
+crewai==1.15.39
+pydantic-ai==2.31.1
+pydantic==2.12.5
+ddgs==9.16.1
+requests==2.34.2
+trafilatura==2.3.1
+truststore==0.10.5
+python-dotenv==1.2.4
