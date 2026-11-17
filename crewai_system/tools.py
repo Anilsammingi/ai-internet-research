@@ -33,6 +33,10 @@ class WebSearchTool(BaseTool):
     def _run(self, query: str) -> str:
 
         search_results = internet_search(query, max_results=3)
+        if search_results.startswith(
+            ("Error:", "Search provider error:", "Unexpected search error:")
+):
+            return search_results
 
         # Extract title, description and URL from search results.
         pattern = (
